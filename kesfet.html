@@ -1,0 +1,141 @@
+<html>
+    <head>
+		<title>KEŞFET</title>
+			
+			<style>
+										 /*menü başındaki liste noktalarını kaldırma*/
+								ul {
+									list-style-type: none;	
+									position:relative;
+									/*     left:425px;    denedim beğenmedim */
+									top:20px;
+								}
+
+            
+		li {   /*menünün konumu : sola yatır*/
+			float: left;
+			}
+
+										li a {   
+												/*menünün konumunu ayarlama */
+												display: block;
+												padding:12px 16px;	
+												/*arkaplan rengi için background-color, yazı rengi için sadece color*/
+												background-color: red;	
+												color:white;
+												/*yazılar altında ki çizgiyi kaldırma*/
+												text-decoration:none; 
+											}
+											
+	/*mouse ileüzerine gelindiğinde gelinen yerin rengini değiştirme*/			 
+	li a:hover{
+	background-color:red; 	
+	}	
+											
+					
+			body{
+				
+				}
+					
+									
+									#fieldset{
+									   
+									   background:blue;
+									   color:white;
+									
+									   position:absolute;
+									   top:20px;
+									   left:975px;
+									   
+									   width:250px;
+									   height:300;
+									   
+									   font-size:20;
+									}
+     .yazilar{
+	width: 100%;
+	display: flex;
+	justify-content:left;
+	padding: 4% 3%;
+	
+}
+
+
+	
+.yazi{
+
+	margin: 1% 3%;
+	background:white; 
+	width: 350px;
+	max-height: 100px;
+}
+.yazilar .yazi{
+	padding: 1%;
+	margin: 1% 2%;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.baslik-yazi{
+	width: 100%;
+	font-size: 20px;
+	text-align: left;
+	border-bottom: 2px dashed ;
+}
+.aciklama-yazi{
+	width: 100%;
+	font-size: 15px;
+	margin-top: 2%;
+	text-align: left;
+	
+}
+			</style> 
+	
+	</head>
+  
+  	<body background="https://r.resimlink.com/D5UZ4.jpg" >
+
+  
+  <ul>
+  <li>
+                <a href="webproje.html" target="anasayfa">ANA SAYFA</a></li></li>
+			<li><a href="kesfet.html" target="kesfet">KEŞFET</a></li>
+			<li><a href="blogara.html">BLOG ARA</a></li>
+			<li><a href="blogyaz.html">KENDİ BLOĞUNU YAZ</a></li>
+			<li><a href="hakkinda.html">HAKKINDA</a></li>
+			<li><a href="iletişim.html">İLETİŞİM</a></li>
+			<li><a href="proje1.0.html">OTURUMU KAPAT</a></li>
+
+  </ul>
+		 <fieldset id="fieldset">
+			<legend>KEŞFET</legend>
+         <input type="checkbox" name="eglence">EĞLENCE <br>
+		 <input type="checkbox" name="bilim">BİLİM<br>
+		 <input type="checkbox" name="borsa">BORSA<br>
+		 <input type="checkbox" name="haber">HABER<br>
+		 <input type="checkbox" name="komplo">KOMPLO TEORİLERİ<br>
+		 <input type="checkbox" name="sinema">SİNEMA<br>		 
+		<input type="checkbox" name="gündem">GÜNDEM<br>
+		 <input type="checkbox" name="oyun">OYUN<br>
+		 <input type="checkbox" name="bilimk">BİLİM KURGU<br>
+		 <br>
+		 
+		<center><input type="button" value="FİLTRELE" style="background:yellow; width:140; height:40; border-radius:5px;"></center>
+		</fieldset>
+												
+														 <div class="yazilar">
+													     <div class="yazi">
+													   	 <div class="baslik-yazi">BAŞLIK</div>
+														 <div class="aciklama-yazi">BURAYA KULLANICININ BLOG VEYA YAZILARI GELECEKBURAYA KULLANICININ BLOG VEYA YAZILARI GELECEK</div>
+											        </div>
+													     <div class="yazi">
+														 <div class="baslik-yazi">BAŞLIK</div>
+														 <div class="aciklama-yazi">BURAYA KULLANICININ BLOG VEYA YAZILARI GELECEKBURAYA KULLANICININ BLOG VEYA YAZILARI GELECEK</div>
+													</div>
+													
+												
+												</div>
+		
+ 
+  </body>
+</html>
