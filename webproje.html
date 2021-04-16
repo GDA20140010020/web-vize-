@@ -1,0 +1,106 @@
+<html>
+        <head> <title>ANASAYFA</title>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+			<style>
+			   
+				
+			  
+			  
+						  
+						  ul {
+							list-style-type: none;	
+							position:relative;
+							/*left:425px; ,,,,, denedim beğenmedim */
+							top:20px;
+						}
+
+						
+					li {   /*menünün konumu : sola yatır*/
+						float: left;
+						}
+
+							li a {   
+									/*menünün konumunu ayarlama */
+									display: block;
+									padding:12px 16px;	
+									/*arkaplan rengi için background-color, yazı rengi için sadece color*/
+									background-color: red;	
+									color:white;
+									/*yazılar altında ki çizgiyi kaldırma*/
+									text-decoration:none; 
+								}
+								
+								/*mouse ileüzerine gelindiğinde gelinen yerin rengini değiştirme*/			 
+								li a:hover{
+										   background-color:green; 	
+											}
+
+          
+
+
+		  /*arama kutusu*/    
+			  
+			  #arama{
+			         max-width: 800px;
+                     position: relative;
+					 top:50px;
+					 
+				 }
+				  
+			  #arabtn{
+					background-color:yellow;
+					border:3px;
+					border-radius:80px;
+					 height:50px;
+					}
+					
+					
+			  #sitearama
+						{
+                         width: 100px;
+						border-radius: 4px;
+						font-size:18px; 
+						padding: 12px 20px 12px 40px;
+						
+					}
+ 
+	        	#sitearama:focus {
+						width:80%;
+									}
+		
+
+
+
+
+			  </style>
+			
+		</head>
+		
+			
+			
+	<body background="https://r.resimlink.com/D5UZ4.jpg" >
+		
+	
+		<center>
+				<ul>
+					<li><a href="webproje.html">ANA SAYFA</a></li></li>
+					<li><a href="kesfet.html">KEŞFET</a></li>
+					<li><a href="blogara.html">BLOG ARA</a></li>
+					<li><a href="blogyaz.html">KENDİ BLOĞUNU YAZ</a></li>
+					<li><a href="hakkinda.html">HAKKINDA</a></li>
+					<li><a href="iletişim.html">İLETİŞİM</a></li>
+					<li><a href="proje1.0.html">OTURUMU KAPAT</a></li>
+					
+				
+				</ul>
+		 
+		<div id="arama">
+			 <input type="text" id=sitearama placeholder="Ara.."> 
+			<a href="kesfet.html"> <input type="button" id="arabtn" value="ARA"></a>
+			
+		</div>
+
+	
+		</center>
+	</body>
+</html>
